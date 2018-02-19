@@ -1,4 +1,6 @@
-package sunl
+package sunl.tcp
+
+import sunl.{Address, Async, Bytes, Peer, Pulling, Shutdown}
 
 import scala.language.higherKinds
 

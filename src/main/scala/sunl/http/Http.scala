@@ -1,6 +1,8 @@
 package sunl.http
 
 import sunl._
+import sunl.tcp.Tcp
+
 import scala.language.higherKinds
 
 final class Http[IO[+_]: Async, T: Bytes, P[_[+_], +_]: Pulling](tcp: Tcp[IO, T, P]) {
